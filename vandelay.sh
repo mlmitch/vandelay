@@ -35,10 +35,13 @@ case $subcommand in
     #didn't match a vandelay subcommand
     #assume $1 is part of the desired git commit arguments and attempt a commit
     AUTHOR="${NAME} <${EMAIL}>"
+    
     echo
     echo -e "Commiting as \"${AUTHOR}\"."
     echo
 
+    #kind of weird.. online discussion says that $@ doesn't preserve quotes and stuff
+    #However, if we don't acces or manipulate $@ before usage in git commit it works
     git -c user.name="${NAME}" -c user.email="${EMAIL}" commit --author="${AUTHOR}" "$@"
     ;;
 esac
