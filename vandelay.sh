@@ -3,7 +3,7 @@
 subcommand=$1
 
 NAME="Art Vandelay"
-EMAIL="art@vandelayindustries"
+EMAIL="art@vandelayindustries.invalid"
 
 case $subcommand in
   "config")
@@ -19,7 +19,7 @@ case $subcommand in
     echo
     echo "        config [-n NAME] [-e EMAIL]:"
     echo "            'vandelay config' modifies the name and email configuration."
-    echo "            e.g. vandelay config -n \"Kel Varnsen\" -e kel@vandelayindustries"
+    echo "            e.g. vandelay config -n \"Kel Varnsen\" -e kel@vandelayindustries.invalid"
     echo
     echo "            Running without options displays the current configuration."
     echo "            A default config is used if vandelay is not configured."
@@ -35,7 +35,7 @@ case $subcommand in
     #didn't match a vandelay subcommand
     #assume $1 is part of the desired git commit arguments and attempt a commit
     AUTHOR="${NAME} <${EMAIL}>"
-    
+
     echo
     echo -e "Commiting as \"${AUTHOR}\"."
     echo
