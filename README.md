@@ -14,7 +14,8 @@ The installation script installs Vandelay to `/usr/local/bin/`.
 
 ```
 git clone https://github.com/mlmitch/vandelay.git
-sudo ./vandelay/install.sh
+cd vandelay
+sudo ./install.sh
 ```
 
 ## Usage
