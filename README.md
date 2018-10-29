@@ -44,3 +44,7 @@ vandelay -m "I'm an importer/exporter, not a developer... you can't blame me for
 
 `vandelay` without a subcommand serves as an alias for `git commit`. Any options you pass to `vandelay` will be given right to the used `git commit` command.
  
+Basic help:
+```
+vandelay help
+```
