@@ -12,10 +12,16 @@ It gives a shortcut for committing to git with an alias.
 Vandelay requires bash and git to be installed.
 The installation script installs Vandelay to `/usr/local/bin/`.
 
+Install:
 ```
 git clone https://github.com/mlmitch/vandelay.git
 cd vandelay
 sudo ./install.sh
+```
+
+Uninstall:
+```
+sudo ./uninstall.sh
 ```
 
 ## Usage
